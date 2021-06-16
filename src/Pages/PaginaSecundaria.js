@@ -8,6 +8,8 @@ class PaginaSecundaria extends Component
         return(
         <View style={{flex:1, alignItems:'center',backgroundColor:'red'}}>
             <Text style={{fontSize:24}}>Novo projeto iniciado</Text>
+            <Text style={{fontSize:24}}>Também exibiremos o texto teste:{this.props.textoTeste}</Text>
+            <Text onPress={this.props.botaoApertado} style={{fontSize:24, backgroundColor: 'blue'}}>Pressione para mudar o texto</Text>
         </View>
         )
     }
