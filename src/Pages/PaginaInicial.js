@@ -9,7 +9,8 @@ class PaginaInicial extends Component
         <View style={{flex:1, alignItems:'center',backgroundColor:'blue'}}>
             <Text style={{fontSize:36}}>Novo projeto iniciado</Text>
             <Text style={{fontSize:36}}>{this.props.textoTeste}</Text>
-            <Text onPress={this.props.botaoApertado} style={{fontSize:36, backgroundColor: 'red'}}>botão teste</Text>
+            <Text onPress={()=>{this.props.botaoApertado("Pagina Inicial alterou o texto")}} style={{fontSize:36, backgroundColor: 'red'}}>botão teste</Text>
+            <Text onPress={()=>{this.props.botaoAddLoja("loja da primeira página","à esquerda da tela")}} style={{fontSize:36, backgroundColor: 'red'}}>Add loja</Text>
         </View>
         )
     }
